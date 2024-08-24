@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Agendamento</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<header>
+			<img class="banner" id="banner" src="img/banner.png" alt="banner do pfb no parque com uma paisagem"/>
+		</header>
+		<nav>	
+			<a class="menu" href="index.html" target="_blank">HOME</a>
+			<a class="menu" href="index.html#ben" target="_blank">BENEFÍCIOS</a>
+			<a class="menu" href="index.html#modali" target="_blank">MODALIDADES</a>
+			<a class="menu" href="index.html#trei" target="_blank">TREINO</a>
+			<a class="menu" href="index.html#local" target="_blank">LOCALIZAÇÃO</a>
+			<a class="menu" href="#agendamentos">AGENDAMENTO</a>
+		</nav>
+		<section id="agendamentos">	
+			<h1>Agendamentos</h1>
+			<p>Agende uma aula experimental grátis!</p>
+			<form name="" method="" action="">
+				<label for="nome">Nome:</label>
+				<input id="nome" type="text" name="nome_completo" placeholder="Digite seu nome completo" required>
+
+				<label for="email">E-mail:</label>
+				<input id="email" type="email" name="email_usuario" placeholder="nome@email.com">
+
+				<label for="senha">Senha:</label>
+				<input id="senha" type="password" name="senha_usuario" placeholder="Somente números">
+
+				<label for="celular">Celular:</label>
+				<input id="celular" type="tel" name="nome_completo" placeholder="(99) 99999-9999" pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$"><br>
+				<div id="data-hora-num">
+					<div>
+						<label for="data">Data:</label>
+						<input id="data" type="date" name="data">
+					</div>	
+					<div>	
+						<label for="hora">Horário:</label>
+						<input id="hora" type="time" name="hora">
+					</div>	
+					<div>	
+						<label for="aula">Aulas:</label>
+						<input id="aula" type="number" name="aula" min="1" max="10" step="1">
+					</div>	
+				</div>
+				<label for="nivel">Nível:</label>
+				<select id="nivel" name="nivel">
+					<option>Selecione</option>
+					<option value="iniciante">Inicante</option>
+					<option value="basico">Básico</option>
+					<option value="intermediario">Intermediário</option>
+					<option value="avançado">Avançado</option>
+				</select>
+				<fieldset>
+					<legend>Gênero:</legend>
+					<input id="masc" type="radio" name="genero" value="masc"><label for="masc">Masculino</label><br>
+					<input id="fem" type="radio" name="genero" value="fem"><label for="fem">Feminino</label>
+				</fieldset>
+				<fieldset>
+					<legend>Atividades:</legend>
+					<input id="musc" type="checkbox" name="atividades" value="musculacao"><label for="musc">Musculação</label><br>
+					<input id="pila" type="checkbox" name="atividades" value="pilates"><label for="pila">Pilates</label><br>
+					<input id="yoga" type="checkbox" name="atividades" value="yoga"><label for="yoga">Yoga</label><br>
+					<input id="corr" type="checkbox" name="atividades" value="corrida"><label for="corr">Corrida</label>
+				</fieldset>
+
+					<label for="msg">Mensagem:</label><br>	
+					<textarea id="msg" cols="52" rows="4"></textarea>
+				<div id="botoes-form">	
+					<input type="submit" name="botao_agendar" value="Agendar">
+					<input type="reset" name="botao_cancelar" value="Cancelar">
+				</div>	
+			</form>
+		</section>
+		<a href="#banner"><img id="footer-topo" src="img/seta-topo.png" alt="imagem de seta que volta para o topo da tela"></a>
+		<footer>
+			<p>
+				Desenvolvido por <a id="footer-nome" href="https://www.linkedin.com/in/joão-nogueira-5898902b2/" target="_blank">João Nogueira</a> - 2024
+			</p>
+		</footer>	
+	</body>
+</html>

@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{margin: 0; padding: 0;}
+
+body{
+	background-color:rgb(255, 255, 255, 0.5); /*ou em hexadecial*/
+}
+
+header, .banner{ /*# para id*/
+	width: 100%;
+	background-color: #0191A4;
+
+}
+nav{
+	padding: 20px;
+	background-color: #0191A4;
+	text-align: center;
+}
+a{
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 1.2rem;
+	text-decoration: none; /*tira a linha*/	
+}
+main, #ben, #modali, #trei, #local, #agendamentos {
+	padding: 100px;
+	width: 100%;
+	background-color: #FFF;
+	box-sizing: border-box;
+}
+section{
+	padding: 20px;
+}
+h1{
+	color: #3F51B5;
+	text-align: center;
+	font-family: 'Kaushan Script', cursive;
+	font-size: 3rem;
+	margin-bottom: 30px;
+}
+h2{
+	color: #3F51B5;
+	text-align: left;
+	font-family: 'Kaushan Script', cursive;
+	font-size: 2rem;
+	margin-bottom: 30px;
+}
+p{
+	color: #777;
+	text-align: justify;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2rem;
+/*	text-indent: 20px; */
+	line-height: 20px;
+	margin-bottom: 30px;
+
+}
+#txt-preto{
+	color: #000;
+}
+main p {
+	margin-bottom: 30px;
+}
+.img-modalidade{ /*. para class*/
+	width: 50%;
+	height: 50%;
+}
+.img-sociais{
+	width: 50px;
+	height: 50px;
+	padding: 10px;
+}
+.container-img{
+	margin-top: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container-img p{
+	color: #000;
+}
+#ben{/*# para id*/
+	background-color: #0191A4;
+}
+#ben h2{
+	color: #FFF;
+}
+#ben p{
+	color: #FFF;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+#modali{/*# para id*/
+	background-color: #EEE;
+}
+.container{
+	display: flex;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	justify-content: space-between;
+}
+.card{
+	background-color: #FFF;
+	margin: 10px;
+	width: 25%;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px #DDD;
+	transition: 0.5s;
+}
+.card:hover{
+	box-shadow: 0 8px 16px #AAA;
+}
+.card-content{
+	padding: 20px;
+}
+.card-content p{
+	color: #777;
+	text-align: justify;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1rem;
+	line-height: 20px;
+}
+.img-card{
+	width: 100%;
+	border-radius: 10px 10px 0 0;
+}
+h3{
+	font-family: 'Kaushan Script', cursive;
+	font-size: 2rem;
+	color: #00BCD4;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.txt-trei{/*# para id*/
+	width: 90%;
+	margin-right: 100px;
+}
+video{
+	width: 400px;
+}
+#local{/*# para id*/
+	background-color: #E5E5E5;
+}
+.menu{/*. para class*/
+	color: #FFF;
+	margin-right: 40px;
+	font-size: 1,4rem;
+}
+.menu:link, .menu:visited{
+	color: #FFF;
+}
+.menu:hover, .menu:active{
+	color: black;
+}
+#footer-nome:link, #footer-nome:visited{
+	color: #FFF;
+}
+#footer-nome:hover, #footer-nome:active{
+	color: #00BCD4;
+}
+.txt-trei a:link, .txt-trei a:visited{
+	color: #000;
+}
+.txt-trei a:hover, .txt-trei a:active{
+	color: #00BCD4;
+}
+ul{
+	list-style-position: inside;
+	list-style-type: circle;
+	padding: 20px 50px 20px 50px; 
+	
+}
+li{
+	color: #FFF;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2rem;
+	margin-bottom: 10px;
+}
+footer{
+	background-color: #202021;
+	padding: 20px;
+}
+footer p{
+	text-align: center;
+	margin-bottom: 0;
+}
+#footer-topo{
+	width: 60px;
+	position: fixed;
+	right: 1px;
+	bottom: 60px;
+}
+
+
+/*Página de agendamentos*/
+
+
+#agendamentos{
+
+}
+#agendamentos p{
+	text-align: center;
+}
+form{
+	width: 400px;
+	margin: 0 auto;
+}
+input, select, textarea{
+	width: 100%;
+	height: 30px;
+	margin-bottom: 10px;
+	padding-left: 5px;
+	box-sizing: border-box;
+	border: 1px solid #C4C4C4;
+	color: #777;
+}
+label{
+	margin-left: 10px;
+}
+label, fieldset, input, select, textarea{
+	font: 1rem 'Roboto', sans-serif;
+}
+fieldset{
+	border: 1px solid #CCC;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+#data-hora-num{
+	display: flex;
+}
+input[type="radio"], input[type="checkbox"]{
+	width: 15px;
+	height: 15px;
+	margin-left: 50px;
+}
+textarea{
+	height: 80px;
+}
+#botoes-form{
+	display: flex;
+}
+input[type="submit"], input[type="reset"]{
+	margin: 20px;
+	background-color: #8BC34A;
+	color: #FFF;
+	border: 0;
+	border-radius: 5px;
+}
+input[type="reset"]{
+	background-color: #F47E7E;
+}
